@@ -7,7 +7,7 @@ using System.IO;
 
 namespace AlgorithmsTaskFinal
 {
-    class InsertionSort
+    class CSV
     {
         void sort(List<int> arr)
         {
@@ -35,7 +35,7 @@ namespace AlgorithmsTaskFinal
             Console.Write("\n");
         }
 
-        public static void CSV()
+        public static void runCSV()
         {
             List<int> arr;
             List<int> aList = new List<int>();
@@ -56,11 +56,12 @@ namespace AlgorithmsTaskFinal
                 Console.WriteLine(arr[i]);
             }
 
-            InsertionSort ob = new InsertionSort();
+            CSV ob = new CSV();
             ob.sort(arr);
 
-            Console.WriteLine("Sorted Numbers");
-            printArray(arr);
+            //   --Not needed for CSV part---
+            //Console.WriteLine("Sorted Numbers");
+            //printArray(arr);
 
             Console.ReadKey();
 
